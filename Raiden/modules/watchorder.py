@@ -4,7 +4,7 @@ from Raiden import pbot as pgram
 from pyrogram import filters
 from bs4 import BeautifulSoup
 
-@pgram.on_message(filters.command("watchorder", f"watchorder@Voilet_probot"))
+@pgram.on_message(filters.command("watchorder", f"watchorder@aqua_probot"))
 def watchorderx(_,message):
 
 	anime = message.text.replace(message.text.split(' ')[0], '')
