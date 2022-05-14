@@ -12,16 +12,16 @@ r = telegraph.create_account(short_name=babe)
 auth_url = r["auth_url"]
 
 
-@register(pattern="^/t(m|xt) (?.*)")
+@register(pattern="^/t(gm|xt) (.*)")
 async def _(event):
-      if event.fwd_from:
+    if event.fwd_from:
         return
-    optional_title = ""
+    optional_title = event.pattern_match.group(2)
     if event.reply_to_msg_id:
         start = datetime.now()
         r_message = await event.get_reply_message()
         input_str = event.pattern_match.group(1)
-        if input_str == "m":
+        if input_str == "gm":
             downloaded_file_name = await tbot.download_media(
                 r_message,
                 TMP_DOWNLOAD_DIRECTORY
@@ -41,7 +41,7 @@ async def _(event):
                 end = datetime.now()
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
-                await h.edit("Uploaded to https://telegra.ph{} in {} seconds.".format(media_urls[0], (ms + ms_two)), link_preview=True)
+                await h.edit("Uploaded to [Telegraph](https://telegra.ph{}) in {} seconds.".format(media_urls[0], (ms + ms_two)), link_preview=True)
         elif input_str == "xt":
             user_object = await tbot.get_entity(r_message.sender_id)
             title_of_page = user_object.first_name # + " " + user_object.last_name
@@ -83,7 +83,7 @@ file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
 
 __help__ = """
- - /tm : Get Telegraph Link Of Replied Media
+ - /tgm : Get Telegraph Link Of Replied Media
  - /txt: Get Telegraph Link of Replied Text
 """
 
