@@ -64,7 +64,7 @@ def no_longer_afk(update, _):
         firstname = update.effective_user.first_name
         try:
             message.reply_text(
-                f"{firstname} You're Back! Come, Let's Behead These People!\nYou Were Awat For: {end_afk_time}"
+                f"{firstname} You're Back! Now Let's Get You A GF!\nYou Were Away For: {end_afk_time}"
             )
         except BadRequest:
             return
@@ -134,7 +134,7 @@ def check_afk(update, _, user_id: int, fst_name: int, userc_id: int):
         if int(userc_id) == int(user_id):
             return
         if reason == "none":
-            res = f"{fst_name}'s Mother Took His/Her Phone\nLast Seen: {since_afk}"
+            res = f"{fst_name} Is Dead\nLast Seen: {since_afk}"
         else:
             res = f"{fst_name} Is Not Here!\nReason: {reason}\nLast seen: {since_afk}"
 
