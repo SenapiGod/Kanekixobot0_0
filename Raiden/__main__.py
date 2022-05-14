@@ -683,7 +683,12 @@ def main():
         updater.start_polling(timeout=15, read_latency=4, drop_pending_updates=True)
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.send_message("[Nature's Beauty](https://telegra.ph/file/812d3d9c7c4c80673c349.jpg)", parse_mode=ParseMode.MARKDOWN)
+            dispatcher.bot.send_video(
+                "@Anime_Chat_XKaizuryu",
+                "https://telegra.ph/file/c33feb72fda62bd4b5cf5.mp4",
+                "Nature's Beauty!",
+                parse_mode=ParseMode.MARKDOWN,
+            )
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
