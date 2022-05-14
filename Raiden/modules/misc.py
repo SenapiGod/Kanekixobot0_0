@@ -111,7 +111,7 @@ def info(update, context):
         return
 
     del_msg = msg.reply_text(
-        "Hold my sword untill I get your info from <b>Database</b>...",
+        "Aabra Kadabra, Info Appear Before Us <b>Magic</b>...",
         parse_mode=ParseMode.HTML,
     )
 
@@ -127,7 +127,7 @@ def info(update, context):
     if user.username:
         text += "\n» Username: @{}".format(html.escape(user.username))
 
-    text += "\n» No. of pfps: {}".format(
+    text += "\n» No. of PFPs {}".format(
         context.bot.get_user_profile_photos(user.id).total_count
     )
 
@@ -142,13 +142,13 @@ def info(update, context):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += ("\n\n» This person is a appointed <b>'GOD'</b>.")
+        text += ("\n\n» This person is a appointed <b>'Creator Of Gods'</b>.")
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += ("\n\n» This person is a appointed <b>'Demon'</b>.")
+        text += ("\n\n» This person is a appointed <b>'Great Mage'</b>.")
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += ("\n\n» This person is a appointed <b>'Dev User'</b>.")
+        text += ("\n\n» This person is a appointed <b>'Magic Emperor'</b>.")
         disaster_level_present = True
     elif user.id in SUPPORT_USERS:
         text += (
@@ -365,8 +365,11 @@ def ud(update, context):
     if not text:
         msg.reply_text("Please enter keywords to search!")
         return
-    if text == "starry":
-        msg.reply_text("Fek off bitch!")
+    if text == "kaizuryu":
+        msg.reply_text("Coolest Tag And Network On TG @TheKaizuryu")
+        return
+     if text == "xelcius":
+        msg.reply_text("Don't Know Your Father?")
         return
     try:
         results = get(f"http://api.urbandictionary.com/v0/define?term={text}").json()
@@ -486,7 +489,7 @@ def rmemes(update, context):
 
 def sudo_ids(update: Update, context: CallbackContext):
     bot = context.bot
-    reply = "<b>My Sensei's :</b>\n"
+    reply = "<b>Dragons:</b>\n"
     for each_user in SUPPORT_USERS:
         user_id = int(each_user)
         try:
@@ -498,7 +501,7 @@ def sudo_ids(update: Update, context: CallbackContext):
 
 def dev_ids(update: Update, context: CallbackContext):
     bot = context.bot
-    reply = "<b>My Onii Chans:</b>\n"
+    reply = "<b>Magic Emperors:</b>\n"
     for each_user in DEV_USERS:
         user_id = int(each_user)
         try:
@@ -523,7 +526,7 @@ def support_ids(update: Update, context: CallbackContext):
 
 def stats(update, _):
     update.effective_message.reply_text(
-        "Saber 剣 Stats:\n" + "\n".join([mod.__stats__() for mod in STATS])
+        "Aquᴀ 水 Stats:\n" + "\n".join([mod.__stats__() for mod in STATS])
     )
 
 
