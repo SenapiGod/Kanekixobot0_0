@@ -37,7 +37,7 @@ def ban(update, context):
     bot, args = context.bot, context.args
 
     if user_can_ban(chat, user, bot.id) is False:
-        message.reply_text("You don't have the sword to behead people!")
+        message.reply_text("You're Not Worthy Enough To Wield The Ban Hammer!")
         return ""
 
     user_id, reason = extract_user_and_text(message, args)
@@ -89,7 +89,7 @@ def ban(update, context):
         log += "\n<b>Reason:</b> {}".format(reason)
 
     reply = (
-        f"The Baka {mention_html(member.user.id, member.user.first_name)} Has Been Put To Death.\n"
+        f"The Baka {mention_html(member.user.id, member.user.first_name)} Has Been Whacked.\n"
     )
     if reason:
         reply += f"<b>Reason:</b> {html.escape(reason)}"
@@ -242,7 +242,7 @@ def kick(update, context):
     args = context.args
 
     if user_can_ban(chat, user, context.bot.id) is False:
-        message.reply_text("You don't have enough rights to kick users!")
+        message.reply_text("You don't have enough magic to kick users!")
         return ""
 
     user_id, reason = extract_user_and_text(message, args)
@@ -260,7 +260,7 @@ def kick(update, context):
         message.reply_text("I can't seem to find this user")
         return ""
     if is_user_ban_protected(chat, user_id):
-        message.reply_text("Yeahh... let's start kicking admins?")
+        message.reply_text("Yeahh... let's start kicking admins, Moron.")
         return ""
 
     if user_id == context.bot.id:
@@ -292,7 +292,7 @@ def kick(update, context):
             log += "\n<b>Reason:</b> {}".format(reason)
 
         return log
-    message.reply_text("The Noob Has Been Beheaded.")
+    message.reply_text("The Noob Has Been Kicked On The Balls.")
 
     return ""
 
