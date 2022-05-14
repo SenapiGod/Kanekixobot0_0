@@ -59,7 +59,7 @@ def mute(update, context):
             context.bot.restrict_chat_member(
                 chat.id, user_id, permissions=ChatPermissions(can_send_messages=False)
             )
-            message.reply_text("Let Me Put A Sword In Their Mouth, Muted!")
+            message.reply_text("Abra Kadbra Mute Magic, Muted!")
             return (
                 "<b>{}:</b>"
                 "\n#MUTE"
@@ -130,7 +130,7 @@ def unmute(update, context):
                 can_add_web_page_previews=True,
             ),
         )
-        message.reply_text("Yep! I'll remove my sword from  their mouth...")
+        message.reply_text("Abra Kadbra Gili Gili Chhoo... Unmuted!")
         return (
             "<b>{}:</b>"
             "\n#UNMUTE"
@@ -219,14 +219,14 @@ def temp_mute(update, context):
                 until_date=mutetime,
                 permissions=ChatPermissions(can_send_messages=False),
             )
-            message.reply_text("shut up! 🤐 Taped for {}!".format(time_val))
+            message.reply_text("Shut Up! Muted For {}!".format(time_val))
             return log
         message.reply_text("This user is already muted.")
 
     except BadRequest as excp:
         if excp.message == "Reply message not found":
             # Do not reply
-            message.reply_text("shut up! 🤐 Taped for {}!".format(time_val), quote=False)
+            message.reply_text("Shut Up! Muted For {}!".format(time_val), quote=False)
             return log
         LOGGER.warning(update)
         LOGGER.exception(
