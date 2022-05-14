@@ -46,7 +46,7 @@ def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
 @run_async
 @dev_plus
 @loggable
-def givemagic(update: Update, context: CallbackContext) -> str:
+def addpiro(update: Update, context: CallbackContext) -> str:
     message = update.effective_message
     user = update.effective_user
     chat = update.effective_chat
@@ -64,15 +64,15 @@ def givemagic(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
         
     if int(user_id) in DEV_USERS:
-      message.reply_text("This member is already Magic Emperor")
+      message.reply_text("This member is already my Onii chan")
         
     if user_id in SUPPORT_USERS:
-        rt += "Requested to Darling to promote a Great Mage to Magic Emperor."
+        rt += "Requested to Darling to promote a Sensei to Onii chan."
         data['sudos'].remove(user_id)
         SUPPORT_USERS.remove(user_id)
 
     if user_id in WHITELIST_USERS:
-        rt += "Requested to Darling to promote Knight to Magic Emperor."
+        rt += "Requested to Darling to promote my Best friend to Onii chan."
         data['whitelist'].remove(user_id)
         WHITELIST_USERS.remove(user_id)
 
@@ -83,7 +83,7 @@ def givemagic(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + "\nSuccessfull {} He is Magic Emperor Now!".format(
+        rt + "\nSuccessfull {} He is my Onii chan!".format(
             user_member.first_name))
 
     log_message = (
@@ -101,7 +101,7 @@ def givemagic(update: Update, context: CallbackContext) -> str:
 @run_async
 @dev_plus
 @loggable
-def addmage(update: Update, context: CallbackContext) -> str:
+def addsudo(update: Update, context: CallbackContext) -> str:
     message = update.effective_message
     user = update.effective_user
     chat = update.effective_chat
@@ -119,11 +119,11 @@ def addmage(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in SUPPORT_USERS:
-        message.reply_text("This member is already a Great Mage")
+        message.reply_text("This member is already my Sensei")
         return ""
 
     if user_id in WHITELIST_USERS:
-        rt += "Requested to Darling to promote Dragon to Great Mage."
+        rt += "Requested to Darling to promote my Best Friend to Sensei."
         data['whitelist'].remove(user_id)
         WHITELIST_USERS.remove(user_id)
 
@@ -135,7 +135,7 @@ def addmage(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + "\nSuccessfull {} Is Now Great Mage!".format(
+        rt + "\nSuccessfull {} is my Sensei!".format(
             user_member.first_name))
 
     log_message = (
@@ -174,12 +174,12 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in SUPPORT_USERS:
-        rt += "Requested Darling to demote him from Great Mage to Dragon"
+        rt += "Requested Darling to demote him to Sensei to Best Friend"
         data['sudos'].remove(user_id)
         SUPPORT_USERS.remove(user_id)
 
     if user_id in WHITELIST_USERS:
-        message.reply_text("This user is already a Dragon.")
+        message.reply_text("This user is already a Best Friend.")
         return ""
 
 
@@ -190,7 +190,7 @@ def addsupport(
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + f"\n{user_member.first_name} was added as Dragon!")
+        rt + f"\n{user_member.first_name} was added as my Best Friend!")
 
     log_message = (
         f"#WHITELIST\n"
@@ -209,7 +209,7 @@ def addsupport(
 @run_async
 @dev_plus
 @loggable
-def rmmagic(update: Update, context: CallbackContext) -> str:
+def rmpiro(update: Update, context: CallbackContext) -> str:
     message = update.effective_message
     user = update.effective_user
     chat = update.effective_chat
@@ -253,7 +253,7 @@ def rmmagic(update: Update, context: CallbackContext) -> str:
 @run_async
 @dev_plus
 @loggable
-def removemage(update: Update, context: CallbackContext) -> str:
+def removesudo(update: Update, context: CallbackContext) -> str:
     message = update.effective_message
     user = update.effective_user
     chat = update.effective_chat
