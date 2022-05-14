@@ -367,10 +367,7 @@ def ud(update, context):
         return
     if text == "kaizuryu":
         msg.reply_text("Coolest Tag And Network On TG @TheKaizuryu")
-        return
-     if text == "xelcius":
-        msg.reply_text("Don't Know Your Father?")
-        return
+        return 
     try:
         results = get(f"http://api.urbandictionary.com/v0/define?term={text}").json()
         reply_text = f'Word: {text}\nDefinition: {results["list"][0]["definition"]}'
