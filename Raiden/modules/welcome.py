@@ -206,7 +206,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_photo(
-                    KAZUHA, caption=f"The Sword God {html.escape(user.first_name)} Just joined.", reply_to_message_id=reply,
+                    KAZUHA, caption=f"The Creator Od Gods {html.escape(user.first_name)} Just joined.", reply_to_message_id=reply,
                     parse_mode=ParseMode.HTML,
                 )
                 welcome_log = (
@@ -219,7 +219,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome Devs
             if new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Behold! One of my Archon just joined the group!",
+                    "Behold! One of Great Mages just joined the group!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -227,8 +227,8 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome yourself
             if new_mem.id == bot.id:
                 update.effective_message.reply_text(
-                    "Kon'nichiwa {}, I'm {}! Thank you for adding me to {}\n"
-                    "Join support and channel update with clicking button below!".format(
+                    "UwU {}, I'm {}! Arigatou For Adding Me To {}\n"
+                    "I'll Be Sure To Make This Chat More Fun For Everyone!".format(
                         user.first_name, context.bot.first_name, chat.title
                     ),
                     reply_to_message_id=reply,
