@@ -44,17 +44,17 @@ def promote(update, context):
        pass
 
     if user_can_promote(chat, user, bot.id) is False:
-        message.reply_text("You don't have enough rights to promote someone!")
+        message.reply_text("You Aren't Old Enough To Do That Kid!")
         return ""
 
     
     if not user_id:
-        message.reply_text("mention one.... 🤷🏻‍♂.")
+        message.reply_text("Mention One. 🤷🏻‍♂.")
         return ""
 
     user_member = chat.get_member(user_id)
     if user_member.status in ["administrator", "creator"]:
-        message.reply_text("This person is already an admin...!")
+        message.reply_text("This Person Is Already A Sexy Admin...!")
         return ""
 
     if user_id == bot.id:
@@ -89,12 +89,12 @@ def promote(update, context):
 
         except BadRequest:
             message.reply_text(
-                "I can't set custom title for admins that I didn't promote!"
+                "I Can't Set Title For Admins That I Didn't Promote!"
             )
 
     message.reply_text(
-        f"Given a sword to <b>{user_member.user.first_name or user_id}</b>"
-        + f" with title <code>{title[:16]}</code>!",
+        f"Given Some Magic To <b>{user_member.user.first_name or user_id}</b>"
+        + f" With Title <code>{title[:16]}</code>!",
         parse_mode=ParseMode.HTML,
     )
     # refresh admin cache
@@ -127,7 +127,7 @@ def demote(update, context):
     bot, args = context.bot, context.args
 
     if user_can_promote(chat, user, bot.id) is False:
-        message.reply_text("You don't have enough rights to demote someone!")
+        message.reply_text("You,re Not Old Enough To Demote Somone Kid!")
         return ""
 
     user_id = extract_user(message, args)
@@ -164,7 +164,7 @@ def demote(update, context):
             can_manage_voice_chats=False,
         )
         message.reply_text(
-            f"Successfully beheaded <b>{user_member.user.first_name or user_id}</b>!",
+            f"Successfully Demoted <b>{user_member.user.first_name or user_id}</b>!",
             parse_mode=ParseMode.HTML,
         )
         return (
