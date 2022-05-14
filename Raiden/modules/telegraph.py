@@ -12,11 +12,11 @@ r = telegraph.create_account(short_name=babe)
 auth_url = r["auth_url"]
 
 
-@register(pattern="^/t(m|xt) ?(.*)")
+@register(pattern="^/t(m|xt) (?.*)")
 async def _(event):
-    if event.fwd_from:
+      if event.fwd_from:
         return
-    optional_title = event.pattern_match.group(2)
+    optional_title = ""
     if event.reply_to_msg_id:
         start = datetime.now()
         r_message = await event.get_reply_message()
@@ -41,7 +41,7 @@ async def _(event):
                 end = datetime.now()
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
-                await h.edit("Uploaded to [Telegraph](https://telegra.ph{}) in {} seconds.".format(media_urls[0], (ms + ms_two)), link_preview=True)
+                await h.edit("Uploaded to https://telegra.ph{} in {} seconds.".format(media_urls[0], (ms + ms_two)), link_preview=True)
         elif input_str == "xt":
             user_object = await tbot.get_entity(r_message.sender_id)
             title_of_page = user_object.first_name # + " " + user_object.last_name
