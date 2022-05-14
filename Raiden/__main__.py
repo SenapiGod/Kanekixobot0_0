@@ -115,7 +115,7 @@ buttons = [
         ),
         InlineKeyboardButton(
             text="Crᴇᴀᴛᴏr's Dᴏʍᴀin",
-            url="https://t.me/TheKaizuryu
+            url="https://t.me/TheKaizuryu",
         ),
     ],
     [
