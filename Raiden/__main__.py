@@ -83,60 +83,60 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-RAIDEN_IMG = "https://telegra.ph/file/ad6e74389bb491353b886.mp4"
-RAIDEN_START = "https://telegra.ph/file/ad6e74389bb491353b886.mp4"
+RAIDEN_IMG = "https://telegra.ph/file/c33feb72fda62bd4b5cf5.mp4"
+RAIDEN_START = "https://telegra.ph/file/0ac698384517bef39ca81.jpg"
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/ad6e74389bb491353b886.mp4) 」────
-ᴋᴏɴ'ɴɪᴄʜɪᴡᴀ {} - sᴀɴ!  
-ɪ'ᴍ Saber 剣 ᴀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.
+────「 [{}](https://telegra.ph/file/c33feb72fda62bd4b5cf5.mp4) 」────
+Hi Thᴇrᴇ {} - Sᴀʍᴀ!  
+I'ʍ [Aquᴀ 水](https://konosuba.fandom.com/wiki/Aqua) Thᴇ Gᴏddᴇss, Dᴇsᴄᴇnᴛ Hᴇrᴇ Frᴏʍ Hᴇᴀvᴇn Tᴏ Mᴀnᴀgᴇ Yᴏur Grᴏuᴩ Wiᴛh Mᴀgiᴄ.
+
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-» ᴜᴘᴛɪᴍᴇ {} 
-» ᴜsᴇʀs {} ᴀᴄʀᴏss {} ᴄʜᴀᴛs 
+
+» My Uᴩᴛiʍᴇ {} 
+» Usᴇrs {} Aᴄrᴏss {} Chᴀᴛs
+
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-Hit /help To See All My Powerful Commands That Will Blow Your Mind. ××  
-𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 [Kaizuryu](https://t.me/TheKaizuryu).
+
+Hiᴛ /help Tᴏ Sᴇᴇ All My Pᴏwᴇrful Cᴏʍʍᴀnds Thᴀᴛ Will Blᴏw Yᴏur Mind. ××  
+𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 [𝙆𝙖𝙞𝙯𝙪𝙧𝙮𝙪](https://t.me/TheKaizuryu).
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ Saber 剣 ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️",
-            url="t.me/SaberXRobot?startgroup=true",
+            text="➕️ ᴀᴅᴅ Aquᴀ 水 ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️",
+            url="t.me/Aqua_ProBot?startgroup=true",
         ),
     ],
     [
         InlineKeyboardButton(
-            text="ᴍʏ ʜᴏᴍᴇ",
+            text="My Hᴇᴀvᴇn",
             url="t.me/Anime_Chat_XKaizuryu",
         ),
         InlineKeyboardButton(
-            text="Owner",
-            url="https://t.me/Xelcius",
+            text="Crᴇᴀᴛᴏr's Dᴏʍᴀin",
+            url="https://t.me/TheKaizuryu
         ),
     ],
     [
         InlineKeyboardButton(
-            text="ʜᴇʟᴘ",
+            text="Hᴇlᴩ & Cᴏʍʍᴀnds❔",
             callback_data="help_back",
-        ),
-        InlineKeyboardButton(
-            text="Kaizuryu",
-            url="https://t.me/TheKaizuryu",
         ),
     ],
 ]
 
 HELP_STRINGS = """
-Hey there! Myself [Saber 剣](https://telegra.ph/file/c0bdce9e00e0db070ce54.jpg).
-Have a look at the following for an idea of some of the things I can help you with.
-*Main* commands available:
- ➛ /help: PM's you this message.
- ➛ /help <module name>: PM's you info about that module.
- ➛ /bug <error name> : inform support about that error 
- ➛ /donate: information on how to donate!
+Thᴇ Gᴏddᴇss [Aquᴀ 水](https://telegra.ph/file/8f07f2d693f3af2d6aa39.jpg) Shall Hᴇlᴩ Yᴏu Wiᴛh All Hᴇr Mᴀgiᴄ Sᴩᴇlls.
+Hᴀvᴇ A Lᴏᴏᴋ Aᴛ Fᴇw Of My Sᴩᴇlls.
+
+ ➛ /help: Gᴇᴛ Hᴇlᴩ Mᴇnu In PM.
+ ➛ /help <module name>: PMs Yᴏu Thᴇ Hᴇlᴩ Fᴏr Mᴇnᴛiᴏnᴇd Mᴏdulᴇ.
+ ➛ /info : Yᴏur Infᴏ On My Dᴀᴛᴀʙᴀsᴇ.
+ ➛ /donate: Infᴏ Aʙᴏuᴛ Hᴏw Tᴏ Aᴩᴩrᴇᴄiᴀᴛᴇ My Crᴇᴀᴛᴏr's Wᴏrᴋ.
  ➛ /settings: 
-   ❂ in PM: will send you your settings for all supported modules.
-   ❂ in a group: will redirect you to pm, with all that chat's settings.\n• *ʀᴇᴀᴄʜ ᴏᴜᴛ ғᴏʀ sᴜᴘᴘᴏʀᴛ:* [sᴜᴘᴘᴏʀᴛ](https://t.me/Anime_Chat_XKaizuryu)
+   ❂ In PM : Will Sᴇnd Yᴏu Yᴏur Sᴇᴛᴛings Fᴏr All Suᴩᴩᴏrᴛᴇd Mᴏdulᴇs.
+   ❂ In A Grᴏuᴩ : Will Rᴇdirᴇᴄᴛ Yᴏu Tᴏ PM, Wiᴛh All Thᴀᴛ Chᴀᴛ's Sᴇᴛᴛings.\n• *Rᴇᴀᴄʜ Oᴜᴛ Fᴏʀ Sᴜᴘᴘᴏʀᴛ:* [Sᴜᴘᴘᴏʀᴛ](https://t.me/Anime_Chat_XKaizuryu)
 """
 
 IMPORTED = {}
@@ -261,7 +261,7 @@ def start(update: Update, context: CallbackContext):
     else:
         message.reply_video(
             RAIDEN_IMG,
-            caption="Hey There! Saber 剣 Is Here To Slash Your Head Off, Ohh I Mean Here To Help\n: <code>{}</code>".format(
+            caption="Aquᴀ 水 Is Awᴀᴋᴇ.\niᴛh All Hᴇr Mᴀgiᴄ Sᴩᴇlls, Lᴇᴛ's Mᴀinᴛᴀin Wiᴛh Thᴇ Grᴏuᴩ.\nUᴩᴛiʍᴇ : <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -269,14 +269,16 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴍʏ ʜᴏᴍᴇ",
+                            text="My Hᴇᴀvᴇn",
                             url="https://t.me/Anime_Chat_XKaizuryu",
                         ),
+                    ],
+                    [
                         InlineKeyboardButton(
-                            text="ʜᴇʟᴘ",
-                            url=f"https://t.me/SaberXRobot?start=help",
+                            text="Hᴇlᴩ & Cᴏʍʍᴀnds❔",
+                            url=f"https://t.me/Aqua_ProBot?start=help",
                         ),
-                    ]
+                    ],
                 ]
             ),
         )
@@ -314,7 +316,7 @@ def help_button(update: Update, context: CallbackContext):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "╒═══≼ ᴍᴇɴᴜ ᴏғ「 *{}* 」ᴍᴏᴅᴜʟᴇ:\n".format(
+                "➖➖ Mᴇnu Fᴏr「 *{}* 」Mᴏdulᴇ ➖➖\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -681,12 +683,7 @@ def main():
         updater.start_polling(timeout=15, read_latency=4, drop_pending_updates=True)
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.send_video(
-                "@Anime_Chat_XKaizuryu",
-                "https://telegra.ph/file/ad6e74389bb491353b886.mp4",
-                "Ready To Cut!",
-                parse_mode=ParseMode.MARKDOWN,
-            )
+            dispatcher.bot.send_message(f"@{SUPPPORT_CHAT}","[Nature's Beauty](https://telegra.ph/file/812d3d9c7c4c80673c349.jpg)", parse_mode=ParseMode.MARKDOWN)
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
