@@ -17,7 +17,7 @@ from requests import get
 from telethon.tl.types import InputMessagesFilterPhotos
 from telethon import events, Button, custom, version
 
-from Raiden import OWNER_ID, SUPPORT_CHAT, UPDATES_CHANNEL
+from Raiden import OWNER_ID, SUPPORT_CHAT
 from Raiden.events import register
 from Raiden import telethn as tbot
 from PIL import Image, ImageDraw, ImageFont
