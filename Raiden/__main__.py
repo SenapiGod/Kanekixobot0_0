@@ -86,7 +86,7 @@ def get_readable_time(seconds: int) -> str:
 RAIDEN_IMG = "https://telegra.ph/file/023e5d8f27e144dc1a959.mp4"
 RAIDEN_START = "https://telegra.ph/file/41585745004c873056d9b.jpg"
 PM_START_TEXT = """
-────「 [{} https://telegra.ph/file/023e5d8f27e144dc1a959.mp4) 」────
+────「 [{} https://telegra.ph/file/023e5d8f27e144dc1a959.mp4] 」────
 Hi Thᴇrᴇ {} - Sᴀʍᴀ!  
 ʜᴇʏ ɪ'ᴍ [ᴋᴇɴ ᴋᴀɴᴇᴋɪ 水](https://t.me/kanekixobot_support)ᴛʜᴇ ɢᴏᴅ, ꜰʀᴏᴍ ʜᴇʟʟ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢᴄ ᴡɪᴛʜ ʙʟᴀᴄᴋ ᴍᴀɢɪᴄ!.
 
@@ -98,7 +98,7 @@ Hi Thᴇrᴇ {} - Sᴀʍᴀ!
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 
 Hiᴛ /help Tᴏ Sᴇᴇ All My Pᴏwᴇrful Cᴏʍʍᴀnds Thᴀᴛ Will Blᴏw Yᴏur Mind. ××  
-𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 [𝙆𝙖𝙞𝙯𝙪𝙧𝙮𝙪](https://t.me/Ft999_eXe).
+𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 [999 Gang](https://t.me/Ft999_eXe).
 """
 
 buttons = [
