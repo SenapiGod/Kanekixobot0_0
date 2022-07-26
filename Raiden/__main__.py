@@ -83,12 +83,12 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-RAIDEN_IMG = "https://telegra.ph/file/c33feb72fda62bd4b5cf5.mp4"
-RAIDEN_START = "https://telegra.ph/file/0ac698384517bef39ca81.jpg"
+RAIDEN_IMG = "https://telegra.ph/file/023e5d8f27e144dc1a959.mp4"
+RAIDEN_START = "https://telegra.ph/file/41585745004c873056d9b.jpg"
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/c33feb72fda62bd4b5cf5.mp4) 」────
+────「 [{} https://telegra.ph/file/023e5d8f27e144dc1a959.mp4) 」────
 Hi Thᴇrᴇ {} - Sᴀʍᴀ!  
-I'ʍ [Aquᴀ 水](https://konosuba.fandom.com/wiki/Aqua) Thᴇ Gᴏddᴇss, Dᴇsᴄᴇnᴛ Hᴇrᴇ Frᴏʍ Hᴇᴀvᴇn Tᴏ Mᴀnᴀgᴇ Yᴏur Grᴏuᴩ Wiᴛh Mᴀgiᴄ.
+I'm [Ken Kaneki 水](https://t.me/kanekixobot_support) The God, From hell to manage your GC with black magic.
 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 
@@ -98,24 +98,24 @@ I'ʍ [Aquᴀ 水](https://konosuba.fandom.com/wiki/Aqua) Thᴇ Gᴏddᴇss, Dᴇ
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 
 Hiᴛ /help Tᴏ Sᴇᴇ All My Pᴏwᴇrful Cᴏʍʍᴀnds Thᴀᴛ Will Blᴏw Yᴏur Mind. ××  
-𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 [𝙆𝙖𝙞𝙯𝙪𝙧𝙮𝙪](https://t.me/TheKaizuryu).
+𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 [𝙆𝙖𝙞𝙯𝙪𝙧𝙮𝙪](https://t.me/Ft999_eXe).
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ Aquᴀ 水 ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️",
-            url="t.me/Aqua_ProBot?startgroup=true",
+            text="➕️ ᴀᴅᴅ Kaneki 水 ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️",
+            url="t.me/kanekixobot?startgroup=true",
         ),
     ],
     [
         InlineKeyboardButton(
-            text="My Hᴇᴀvᴇn",
-            url="t.me/Anime_Chat_XKaizuryu",
+            text="My Hell",
+            url="t.me/kanekixobot_support",
         ),
         InlineKeyboardButton(
             text="Crᴇᴀᴛᴏr's Dᴏʍᴀin",
-            url="https://t.me/TheKaizuryu",
+            url="https://t.me/Ft999_eXe",
         ),
     ],
     [
@@ -127,7 +127,7 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-Thᴇ Gᴏddᴇss [Aquᴀ 水](https://telegra.ph/file/8f07f2d693f3af2d6aa39.jpg) Shall Hᴇlᴩ Yᴏu Wiᴛh All Hᴇr Mᴀgiᴄ Sᴩᴇlls.
+The God[Kaneki 水](https://telegra.ph/file/41585745004c873056d9b.jpg) Shall Hᴇlᴩ Yᴏu Wiᴛh All Hᴇr Mᴀgiᴄ Sᴩᴇlls.
 Hᴀvᴇ A Lᴏᴏᴋ Aᴛ Fᴇw Of My Sᴩᴇlls.
 
  ➛ /help: Gᴇᴛ Hᴇlᴩ Mᴇnu In PM.
@@ -261,7 +261,7 @@ def start(update: Update, context: CallbackContext):
     else:
         message.reply_video(
             RAIDEN_IMG,
-            caption="Aquᴀ 水 Is Awᴀᴋᴇ.\niᴛh All Hᴇr Mᴀgiᴄ Sᴩᴇlls, Lᴇᴛ's Mᴀinᴛᴀin Wiᴛh Thᴇ Grᴏuᴩ.\nUᴩᴛiʍᴇ : <code>{}</code>".format(
+            caption="Kaneki 水 Is Awᴀᴋᴇ.\niᴛh All His Mᴀgiᴄ Sᴩᴇlls, Lᴇᴛ's Mᴀinᴛᴀin Wiᴛh Thᴇ Grᴏuᴩ.\nUᴩᴛiʍᴇ : <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -270,13 +270,13 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="My Hᴇᴀvᴇn",
-                            url="https://t.me/Anime_Chat_XKaizuryu",
+                            url="https://t.me/kanekixobot_support",
                         ),
                     ],
                     [
                         InlineKeyboardButton(
                             text="Hᴇlᴩ & Cᴏʍʍᴀnds❔",
-                            url=f"https://t.me/Aqua_ProBot?start=help",
+                            url=f"https://t.me/kanekixobot?start=help",
                         ),
                     ],
                 ]
