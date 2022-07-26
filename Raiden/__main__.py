@@ -85,8 +85,8 @@ def get_readable_time(seconds: int) -> str:
 
 RAIDEN_IMG = "https://telegra.ph/file/023e5d8f27e144dc1a959.mp4"
 RAIDEN_START = "https://telegra.ph/file/41585745004c873056d9b.jpg"
-PM_START_TEXT = """
-────「 [{} https://telegra.ph/file/023e5d8f27e144dc1a959.mp4] 」────
+PM_START_TEXT = "" 
+────「 [{}](https://telegra.ph/file/023e5d8f27e144dc1a959.mp4) 」────
 Hi Thᴇrᴇ {} - Sᴀʍᴀ!  
 ʜᴇʏ ɪ'ᴍ [ᴋᴇɴ ᴋᴀɴᴇᴋɪ 水](https://t.me/kanekixobot_support)ᴛʜᴇ ɢᴏᴅ, ꜰʀᴏᴍ ʜᴇʟʟ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢᴄ ᴡɪᴛʜ ʙʟᴀᴄᴋ ᴍᴀɢɪᴄ!.
 
