@@ -88,7 +88,7 @@ RAIDEN_START = "https://telegra.ph/file/41585745004c873056d9b.jpg"
 PM_START_TEXT = """
 ────「 [{} https://telegra.ph/file/023e5d8f27e144dc1a959.mp4) 」────
 Hi Thᴇrᴇ {} - Sᴀʍᴀ!  
-I'm [Ken Kaneki 水](https://t.me/kanekixobot_support) The God, From hell to manage your GC with black magic.
+ʜᴇʏ ɪ'ᴍ [ᴋᴇɴ ᴋᴀɴᴇᴋɪ 水](https://t.me/kanekixobot_support)ᴛʜᴇ ɢᴏᴅ, ꜰʀᴏᴍ ʜᴇʟʟ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢᴄ ᴡɪᴛʜ ʙʟᴀᴄᴋ ᴍᴀɢɪᴄ!.
 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 
@@ -104,17 +104,17 @@ Hiᴛ /help Tᴏ Sᴇᴇ All My Pᴏwᴇrful Cᴏʍʍᴀnds Thᴀᴛ Will Blᴏw
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ Kaneki 水 ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️",
+            text="➕️ ᴀᴅᴅ ᴋᴀɴᴇᴋɪ 水 ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️",
             url="t.me/kanekixobot?startgroup=true",
         ),
     ],
     [
         InlineKeyboardButton(
-            text="My Hell",
+            text="ᴍʏ ʜᴇʟʟ",
             url="t.me/kanekixobot_support",
         ),
         InlineKeyboardButton(
-            text="Crᴇᴀᴛᴏr's Dᴏʍᴀin",
+            text="ᴄʀᴇᴀᴛᴏʀ'ꜱ ᴅᴏᴍᴀɪɴ ",
             url="https://t.me/Ft999_eXe",
         ),
     ],
@@ -127,7 +127,7 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-The God[Kaneki 水](https://telegra.ph/file/41585745004c873056d9b.jpg) Shall Hᴇlᴩ Yᴏu Wiᴛh All Hᴇr Mᴀgiᴄ Sᴩᴇlls.
+ᴛʜᴇ ɢᴏᴅ [ᴋᴀɴᴇᴋɪ 水](https://telegra.ph/file/41585745004c873056d9b.jpg) Shall Hᴇlᴩ Yᴏu Wiᴛh All Hᴇr Mᴀgiᴄ Sᴩᴇlls.
 Hᴀvᴇ A Lᴏᴏᴋ Aᴛ Fᴇw Of My Sᴩᴇlls.
 
  ➛ /help: Gᴇᴛ Hᴇlᴩ Mᴇnu In PM.
