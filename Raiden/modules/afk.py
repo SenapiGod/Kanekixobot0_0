@@ -40,7 +40,7 @@ def afk(update, _):
     REDIS.set(f"afk_time_{user.id}", start_afk_time)
     fname = user.first_name
     try:
-        message.reply_text(f"{fname} Please Don't Go! Let's Talk About Some Naughty Stuff.")
+        message.reply_text(f"{fname} Please Don't Go! Let's Talk About how to murder your friends.")
     except BadRequest:
         pass
 
