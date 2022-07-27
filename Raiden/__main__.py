@@ -261,7 +261,7 @@ def start(update: Update, context: CallbackContext):
     else:
         message.reply_video(
             RAIDEN_IMG,
-            caption="Kaneki 水 Is Awᴀᴋᴇ.\ᴡiᴛh All His Mᴀgiᴄ Sᴩᴇlls, Lᴇᴛ's Mᴀinᴛᴀin Wiᴛh Thᴇ Grᴏuᴩ.\nUᴩᴛiʍᴇ : <code>{}</code>".format(
+            caption="Kaneki 水 Is Awᴀᴋᴇ.ᴡiᴛh All His Mᴀgiᴄ Sᴩᴇlls, Lᴇᴛ's Mᴀinᴛᴀin Wiᴛh Thᴇ Grᴏuᴩ.\nUᴩᴛiʍᴇ : <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
