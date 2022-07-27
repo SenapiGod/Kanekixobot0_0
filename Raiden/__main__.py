@@ -136,7 +136,7 @@ Hᴀvᴇ A Lᴏᴏᴋ Aᴛ Fᴇw Of My Sᴩᴇlls.
  ➛ /donate: Infᴏ Aʙᴏuᴛ Hᴏw Tᴏ Aᴩᴩrᴇᴄiᴀᴛᴇ My Crᴇᴀᴛᴏr's Wᴏrᴋ.
  ➛ /settings: 
    ❂ In PM : Will Sᴇnd Yᴏu Yᴏur Sᴇᴛᴛings Fᴏr All Suᴩᴩᴏrᴛᴇd Mᴏdulᴇs.
-   ❂ In A Grᴏuᴩ : Will Rᴇdirᴇᴄᴛ Yᴏu Tᴏ PM, Wiᴛh All Thᴀᴛ Chᴀᴛ's Sᴇᴛᴛings.\n• *Rᴇᴀᴄʜ Oᴜᴛ Fᴏʀ Sᴜᴘᴘᴏʀᴛ:* [Sᴜᴘᴘᴏʀᴛ](https://t.me/Anime_Chat_XKaizuryu)
+   ❂ In A Grᴏuᴩ : Will Rᴇdirᴇᴄᴛ Yᴏu Tᴏ PM, Wiᴛh All Thᴀᴛ Chᴀᴛ's Sᴇᴛᴛings.\n• *Rᴇᴀᴄʜ Oᴜᴛ Fᴏʀ Sᴜᴘᴘᴏʀᴛ:* [Sᴜᴘᴘᴏʀᴛ](https://t.me/kanekixobot_support)
 """
 
 IMPORTED = {}
@@ -261,7 +261,7 @@ def start(update: Update, context: CallbackContext):
     else:
         message.reply_video(
             RAIDEN_IMG,
-            caption="Kaneki 水 Is Awᴀᴋᴇ.\niᴛh All His Mᴀgiᴄ Sᴩᴇlls, Lᴇᴛ's Mᴀinᴛᴀin Wiᴛh Thᴇ Grᴏuᴩ.\nUᴩᴛiʍᴇ : <code>{}</code>".format(
+            caption="Kaneki 水 Is Awᴀᴋᴇ.\ᴡiᴛh All His Mᴀgiᴄ Sᴩᴇlls, Lᴇᴛ's Mᴀinᴛᴀin Wiᴛh Thᴇ Grᴏuᴩ.\nUᴩᴛiʍᴇ : <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -269,7 +269,7 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="My Hᴇᴀvᴇn",
+                            text="My Hᴇll",
                             url="https://t.me/kanekixobot_support",
                         ),
                     ],
