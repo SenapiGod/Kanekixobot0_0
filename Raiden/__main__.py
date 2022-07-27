@@ -684,9 +684,9 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             dispatcher.bot.send_video(
-                "@Anime_Chat_XKaizuryu",
-                "https://telegra.ph/file/c33feb72fda62bd4b5cf5.mp4",
-                "Nature's Beauty!",
+                "@kanekixobot_support",
+                "https://telegra.ph/file/023e5d8f27e144dc1a959.mp4",
+                "Hell's Beauty!",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
